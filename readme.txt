@@ -6,8 +6,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 4.9.1
-Stable tag: 1.0.11
+Tested up to: 4.9.2
+Stable tag: 1.0.12
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.12 - 2018/01/17 =
+* Added README file for GitHub.
 
 = 1.0.11 - 2017/11/30 =
 * Fixed compatibility issue with WooZone.
