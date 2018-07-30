@@ -6,8 +6,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 4.9.4
-Stable tag: 1.0.14
+Tested up to: 4.9.8
+Stable tag: 1.0.15
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.15 - 2018/07/30 =
+* Disables cloaking of URLs during WooCommerce Product Exporting.
 
 = 1.0.14 - 2018/03/14 =
 * Declared required and supported WooCommerce version.
