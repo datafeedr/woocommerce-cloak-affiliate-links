@@ -7,11 +7,11 @@ Author: datafeedr.com
 Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
-Tested up to: 5.0
-Version: 1.0.16
+Tested up to: 5.1
+Version: 1.0.17
 
 WC requires at least: 3.0
-WC tested up to: 3.5.2
+WC tested up to: 3.5.4
 
 WooCommerce Cloak Affiliate Links plugin
 Copyright (C) 2019, Datafeedr - help@datafeedr.com
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.16' );
+define( 'WCCAL_VERSION', '1.0.17' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
