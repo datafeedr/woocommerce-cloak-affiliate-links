@@ -252,7 +252,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 */
 		function field_whitelist() { ?>
             <textarea id="wwcal_whitelist" name="wccal_options[whitelist]" style="min-width: 300px;"><?php echo $this->options['whitelist'] ?></textarea>
-            <p class="description"><?php _e( 'Add URLs delimited by commas (,)',
+            <p class="description"><?php _e( 'Add URLs delimited by commas (,). Be sure to add the protocol (https://), trailing slashes are ignored.',
 					WCCAL_DOMAIN ); ?></p>
 			<?php
 		}
