@@ -8,7 +8,7 @@ Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
 Tested up to: 5.4
-Version: 1.0.22
+Version: 1.0.23
 
 WC requires at least: 3.0
 WC tested up to: 4.0
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.22' );
+define( 'WCCAL_VERSION', '1.0.23' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
@@ -112,6 +112,21 @@ if ( ! class_exists( 'Wccal' ) ) {
 			}
 
 			return $permalinks['affiliate_base'];
+		}
+
+		/**
+		 * Get the whitelist as an array.
+		 */
+		static public function get_whitelist_array() {
+			$whitelist_textarea = get_option( 'wccal_options', array() )['whitelist'];
+			
+			if ( !$whitelist_textarea ) {
+				return false;
+			}
+
+			$whitelist_array = explode(",", $whitelist_textarea);
+			array_walk($whitelist_array, function(&$item) { $item = trim(rtrim(strtolower($item), "/")); });
+			return $whitelist_array;
 		}
 
 		/**
@@ -191,6 +206,8 @@ if ( ! class_exists( 'Wccal' ) ) {
 				add_settings_field( 'robots', __( 'Add Redirect Path to Robots.txt', WCCAL_DOMAIN ),
 					array( &$this, 'field_robots' ), 'wccal-options', 'general_settings' );
 			}
+			add_settings_field( 'whitelist', __( 'Do Not Cloack This URLs', WCCAL_DOMAIN ),
+				array( &$this, 'field_whitelist' ), 'wccal-options', 'general_settings' );
 		}
 
 		/**
@@ -226,6 +243,16 @@ if ( ! class_exists( 'Wccal' ) ) {
             <p><input type="radio" value="no" name="wccal_options[robots]" <?php checked( $this->options['robots'],
 					'no', true ); ?> /> <?php _e( 'No', WCCAL_DOMAIN ); ?></p>
             <p class="description"><?php _e( 'Add the path configured on your Permalinks page to your robots.txt file to prevent any search engines from attempting to view or index that path.',
+					WCCAL_DOMAIN ); ?></p>
+			<?php
+		}
+
+		/**
+		 * Field to add URLs to the whitelist.
+		 */
+		function field_whitelist() { ?>
+            <textarea id="wwcal_whitelist" name="wccal_options[whitelist]" style="min-width: 300px;"><?php echo $this->options['whitelist'] ?></textarea>
+            <p class="description"><?php _e( 'Add URLs delimited by commas (,)',
 					WCCAL_DOMAIN ); ?></p>
 			<?php
 		}
@@ -405,6 +432,9 @@ if ( ! class_exists( 'Wccal' ) ) {
 				}
 				if ( $key == 'robots' ) {
 					$new_input['robots'] = $value;
+				}
+				if ( $key == 'whitelist' ) {
+					$new_input['whitelist'] = $value;
 				}
 			}
 
