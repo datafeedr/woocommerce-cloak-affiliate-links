@@ -206,7 +206,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 				add_settings_field( 'robots', __( 'Add Redirect Path to Robots.txt', WCCAL_DOMAIN ),
 					array( &$this, 'field_robots' ), 'wccal-options', 'general_settings' );
 			}
-			add_settings_field( 'whitelist', __( 'Do Not Cloack This URLs', WCCAL_DOMAIN ),
+			add_settings_field( 'whitelist', __( 'Do Not Cloak This URLs', WCCAL_DOMAIN ),
 				array( &$this, 'field_whitelist' ), 'wccal-options', 'general_settings' );
 		}
 
