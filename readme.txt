@@ -6,8 +6,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 5.4
-Stable tag: 1.0.22
+Tested up to: 5.5
+Stable tag: 1.0.23
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.23 - 2020/07/27 =
+* Updated to support WooCommerce 4.3.
 
 = 1.0.22 - 2020/03/11 =
 * Updated to support WooCommerce 4.0.
