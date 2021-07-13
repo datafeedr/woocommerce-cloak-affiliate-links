@@ -6,8 +6,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 5.7
-Stable tag: 1.0.26
+Tested up to: 5.8-RC2
+Stable tag: 1.0.27
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -46,11 +46,15 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 
 == Changelog ==
 
+= 1.0.27 - 2021/07/13 =
+* Updated to support WordPress 5.8.
+* Updated to support WooCommerce 5.5.
+
 = 1.0.26 - 2020/03/08 =
-* Updated to support WooCommerce 5.7.
+* Updated to support WordPress 5.7.
 
 = 1.0.25 - 2020/12/01 =
-* Updated to support WooCommerce 5.6.
+* Updated to support WordPress 5.6.
 
 = 1.0.24 - 2020/09/30 =
 * Updated to support WooCommerce 4.5.
