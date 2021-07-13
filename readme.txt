@@ -7,7 +7,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
 Tested up to: 5.8-RC2
-Stable tag: 1.0.27
+Stable tag: 1.0.28
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.28 - 2021/07/13 =
+* Forgot one small change in last update.
 
 = 1.0.27 - 2021/07/13 =
 * Updated to support WordPress 5.8.

@@ -8,7 +8,7 @@ Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
 Tested up to: 5.8-RC2
-Version: 1.0.27
+Version: 1.0.28
 
 WC requires at least: 3.0
 WC tested up to: 5.5
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.26' );
+define( 'WCCAL_VERSION', '1.0.28' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
