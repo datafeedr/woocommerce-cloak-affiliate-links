@@ -7,7 +7,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
 Tested up to: 6.1
-Stable tag: 1.0.29
+Stable tag: 1.0.30
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.30 - 2022/10/28 =
+* Updated "tested up to" values.
 
 = 1.0.29 - 2021/08/09 =
 * Added `wccal_product_url_permalink` filter.
