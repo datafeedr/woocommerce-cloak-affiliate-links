@@ -7,14 +7,14 @@ Author: datafeedr.com
 Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
-Tested up to: 6.1
-Version: 1.0.30
+Tested up to: 6.2.1-alpha
+Version: 1.0.31
 
 WC requires at least: 3.0
 WC tested up to: 7.0
 
 WooCommerce Cloak Affiliate Links plugin
-Copyright (C) 2022, Datafeedr - help@datafeedr.com
+Copyright (C) 2023, Datafeedr - help@datafeedr.com
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.30' );
+define( 'WCCAL_VERSION', '1.0.31' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
