@@ -7,11 +7,11 @@ Author: datafeedr.com
 Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
-Tested up to: 6.2.1-alpha
-Version: 1.0.32
+Tested up to: 6.4.2-alpha
+Version: 1.0.33
 
 WC requires at least: 3.0
-WC tested up to: 7.6
+WC tested up to: 8.2
 
 WooCommerce Cloak Affiliate Links plugin
 Copyright (C) 2023, Datafeedr - help@datafeedr.com
@@ -37,11 +37,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.32' );
+define( 'WCCAL_VERSION', '1.0.33' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
 define( 'WCCAL_DOMAIN', 'wccal' );
+
+/**
+ * Declaring WooCommerce HPOS compatibility.
+ *
+ * @see https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book
+ *
+ * @since 1.0.33
+ */
+add_action( 'before_woocommerce_init', function () {
+	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+	}
+} );
+
 
 if ( ! class_exists( 'Wccal' ) ) {
 

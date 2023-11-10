@@ -6,8 +6,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 6.2.1-alpha
-Stable tag: 1.0.32
+Tested up to: 6.4.2-alpha
+Stable tag: 1.0.33
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,10 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.33 - 2023/11/10 =
+* Updated "tested up to" value
+* Declared WooCommerce HPOS compatibility
 
 = 1.0.32 - 2023/05/02 =
 * Added 2 public properties to `Wccal` class.
