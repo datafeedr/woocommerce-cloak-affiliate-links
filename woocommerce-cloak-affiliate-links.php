@@ -394,7 +394,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 * permalink_settings_save function.
 		 */
 		function permalink_settings_save() {
-			if ( ! is_admin() ) {
+			if ( ! is_admin() || ! current_user_can( 'manage_options' ) ) {
 				return;
 			}
 			if ( isset( $_POST['wccal_affiliate_base'] ) ) {
