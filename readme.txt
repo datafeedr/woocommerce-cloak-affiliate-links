@@ -1,13 +1,13 @@
 === WooCommerce Cloak Affiliate Links ===
 
 Contributors: datafeedr.com
-Tags: woocommerce, affiliate, links, cloak, mask, redirect, external, url, urls, rewrite, datafeedr
+Tags: affiliate links, cloak, mask, redirect, external
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9945A9PLQ7P46
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 6.4.3
-Stable tag: 1.0.34
+Tested up to: 6.6-RC2
+Stable tag: 1.0.35
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,6 +45,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.35 - 2024/07/05 =
+* Updated "tested up to" value
 
 = 1.0.34 - 2024/03/18 =
 * Updated permalink saving.
