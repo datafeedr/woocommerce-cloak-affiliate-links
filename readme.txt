@@ -1,19 +1,18 @@
-=== WooCommerce Cloak Affiliate Links ===
+=== Cloak Affiliate Links for WooCommerce ===
 
 Contributors: datafeedr.com
 Tags: affiliate links, cloak, mask, redirect, external
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9945A9PLQ7P46
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
 Tested up to: 6.7
-Stable tag: 1.0.36
+Stable tag: 1.0.37
 
 Cloak your WooCommerce external & affiliate links.
 
 == Description ==
 
-The *WooCommerce Cloak Affiliate Links* plugin allows you to mask all external links in your WooCommerce store.
+The *Cloak Affiliate Links for WooCommerce* plugin allows you to mask all external links in your WooCommerce store.
 
 For example, change this...
 `merchant.com/index.php?aff_id=123&product_id=456`
@@ -30,7 +29,7 @@ The plugin also adds a "Disallow" to your robots.txt file to prevent bots from f
 This section describes how to install the plugin and get it working.
 
 1. Upload the `woocommerce-cloak-affiliate-links` folder to the `/wp-content/plugins/` directory.
-1. Activate the *WooCommerce Cloak Affiliate Links* plugin through the 'Plugins' menu in WordPress.
+1. Activate the *Cloak Affiliate Links for WooCommerce* plugin through the 'Plugins' menu in WordPress.
 1. Configure the plugin by going to Settings > WC Cloak Links.
 
 == Frequently Asked Questions ==
@@ -45,6 +44,9 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 2. Permalinks
 
 == Changelog ==
+
+= 1.0.37 - 2025/09/15 =
+* Changed plugin name to comply with WooCommerce's trademark.
 
 = 1.0.36 - 2024/12/30 =
 * Fixed CSRF issue

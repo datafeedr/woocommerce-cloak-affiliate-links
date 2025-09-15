@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: WooCommerce Cloak Affiliate Links
+Plugin Name: Cloak Affiliate Links for WooCommerce
 Plugin URI: https://www.datafeedr.com
 Description: Cloak your WooCommerce external & affiliate links.
 Author: datafeedr.com
@@ -8,12 +8,12 @@ Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
 Tested up to: 6.7
-Version: 1.0.36
+Version: 1.0.37
 
 WC requires at least: 3.0
-WC tested up to: 9.0
+WC tested up to: 10.0
 
-WooCommerce Cloak Affiliate Links plugin
+Cloak Affiliate Links for WooCommerce plugin
 Copyright (C) 2025, Datafeedr - help@datafeedr.com
 
 This program is free software: you can redistribute it and/or modify
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.36' );
+define( 'WCCAL_VERSION', '1.0.37' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
@@ -159,7 +159,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 */
 		function options_page() {
 			add_options_page(
-				__( 'WooCommerce Cloak Affiliate Links Settings', WCCAL_DOMAIN ),
+				__( 'Cloak Affiliate Links for WooCommerce Settings', WCCAL_DOMAIN ),
 				__( 'WC Cloak Links', WCCAL_DOMAIN ),
 				'manage_options',
 				'wccal-options',
@@ -185,7 +185,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 */
 		function build_options_page() {
 			echo '<div class="wrap" id="wccal_options">';
-			echo '<h2>' . __( 'WooCommerce Cloak Affiliate Links Settings', WCCAL_DOMAIN ) . '</h2>';
+			echo '<h2>' . __( 'Cloak Affiliate Links for WooCommerce Settings', WCCAL_DOMAIN ) . '</h2>';
 			echo '<form method="post" action="options.php">';
 			wp_nonce_field( 'update-wccal-options' );
 			settings_fields( 'wccal-options' );

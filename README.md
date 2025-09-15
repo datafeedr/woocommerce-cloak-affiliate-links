@@ -1,4 +1,4 @@
-# WooCommerce Cloak Affiliate Links plugin
+# Cloak Affiliate Links for WooCommerce plugin
 
 A WordPress plugin to cloak your WooCommerce external &amp; affiliate links.
 
