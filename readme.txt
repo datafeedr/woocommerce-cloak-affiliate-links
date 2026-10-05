@@ -5,7 +5,7 @@ Tags: affiliate links, cloak, mask, redirect, external
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
-Tested up to: 6.7
+Tested up to: 7.1
 Stable tag: 1.0.38
 
 Cloak your WooCommerce external & affiliate links.

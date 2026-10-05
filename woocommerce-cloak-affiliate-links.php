@@ -7,7 +7,7 @@ Author: datafeedr.com
 Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
-Tested up to: 6.7
+Tested up to: 7.1
 Version: 1.0.38
 
 WC requires at least: 3.0
