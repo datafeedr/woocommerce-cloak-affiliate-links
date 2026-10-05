@@ -8,7 +8,7 @@ Author URI: http://www.datafeedr.com
 License: GPL v3
 Requires at least: 4.7.0
 Tested up to: 7.1
-Version: 1.0.38
+Version: 1.0.39
 
 WC requires at least: 3.0
 WC tested up to: 11.0
@@ -37,7 +37,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Define constants.
  */
-define( 'WCCAL_VERSION', '1.0.38' );
+define( 'WCCAL_VERSION', '1.0.39' );
 define( 'WCCAL_URL', plugin_dir_url( __FILE__ ) );
 define( 'WCCAL_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WCCAL_BASENAME', plugin_basename( __FILE__ ) );
@@ -309,7 +309,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 * user can read the post. This stops visitors from reading the affiliate URLs of
 		 * trashed, draft, private or password-protected products.
 		 *
-		 * @since 1.0.38
+		 * @since 1.0.39
 		 *
 		 * @param int $post_id
 		 *
@@ -325,7 +325,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 			/**
 			 * Allows other post types or statuses to redirect.
 			 *
-			 * @since 1.0.38
+			 * @since 1.0.39
 			 *
 			 * @param bool $allowed True if the redirect is allowed.
 			 * @param int $post_id The requested post ID.
@@ -336,7 +336,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		/**
 		 * Return $url if it is an http(s) URL. Otherwise, return an empty string.
 		 *
-		 * @since 1.0.38
+		 * @since 1.0.39
 		 *
 		 * @param mixed $url
 		 *
@@ -356,7 +356,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		/**
 		 * The configured redirect status, or 302 if it isn't a 3xx code.
 		 *
-		 * @since 1.0.38
+		 * @since 1.0.39
 		 *
 		 * @return int
 		 */
@@ -501,7 +501,7 @@ if ( ! class_exists( 'Wccal' ) ) {
 		 * "/"-separated segment keeps only letters, numbers, "_" and "-". Case is preserved,
 		 * because rewrite rules are case-sensitive.
 		 *
-		 * @since 1.0.38
+		 * @since 1.0.39
 		 *
 		 * @param mixed $value The submitted value.
 		 *

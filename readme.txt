@@ -6,7 +6,7 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 4.7.0
 Tested up to: 7.1
-Stable tag: 1.0.38
+Stable tag: 1.0.39
 
 Cloak your WooCommerce external & affiliate links.
 
@@ -45,7 +45,7 @@ There's a lot of debate about this.  I would suggest Googling this and seeing wh
 
 == Changelog ==
 
-= 1.0.38 - 2026/10/05 =
+= 1.0.39 - 2026/10/05 =
 * Security: cloaked links only redirect for published, non-password-protected products (or users who can read the product). New `wccal_is_redirect_allowed` filter.
 * Security: the redirect only follows http and https URLs.
 * Security: settings and the "Affiliate link base" are validated on save.
